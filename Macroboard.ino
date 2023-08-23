@@ -10,6 +10,7 @@ https://docstore.mik.ua/orelly/webprog/DHTML_javascript/0596004672_jvdhtmlckbk-a
 
 const int KEYS[7] = {89, 90, 91, 92, 93, 94, 95};
 const int MODIFIERS[2] = {210, 130}; // HOME, LEFT_ALT
+const int BUTTON_DELAY = 250;
 
 void setup()
 {
@@ -20,8 +21,6 @@ void setup()
 void loop()
 {
   BLINK_SCL();
-  delay(20);
-
   for (int i = 0; i < 7; i++)
   {
     START_SCL_CLOCK();
@@ -30,12 +29,11 @@ void loop()
     {
       HOLD_MODIFIERS();
       press_key(KEYS[i]);
-      delay(50);
       break;
     }
   }
   Keyboard.releaseAll();
-  delay(100); // Prevents double click
+  delay(BUTTON_DELAY); // Prevents double click
 }
 
 // No idea what this code does
