@@ -52,3 +52,13 @@
         </tr>
     </table>
 </div>
+
+<div>
+    <h2>Required Software / Tools</h2>
+    <ul>
+        <li><a href="https://www.arduino.cc/en/software">Arduino IDE</a></li>
+        <li><a href="https://www.arduino.cc/reference/en/language/functions/usb/keyboard/">Keyboard.h Documents</a></li>
+        <li><a href="https://docstore.mik.ua/orelly/webprog/DHTML_javascript/0596004672_jvdhtmlckbk-app-b.html
+">Keyboard keycodes</a></li>
+    </ul>
+</div>
